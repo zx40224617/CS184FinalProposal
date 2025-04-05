@@ -30,31 +30,171 @@
   </head>
   <body>
     <div class="container">
-      <h1>CS184/284A Spring 2025 Final Project Proposal</h1>
-      <div style="text-align: center">Names:</div>
+      <h1>Interactive VR Mesh Deformation via Hand-Object Interaction</h1>
+      <div style="text-align: center">
+        Names: Yun Chung Chang, Jason Du, Panfeng(gavin) Jiang, Zitong (Peter)
+        Hu
+      </div>
 
       <br />
 
-      Link to webpage: (TODO)
-      <a href="https://cs184.eecs.berkeley.edu/sp25"
-        >cs184.eecs.berkeley.edu/sp25</a
+      Link to webpage:
+      <a href="https://zx40224617.github.io/CS184FinalProposal/"
+        >https://zx40224617.github.io/CS184FinalProposal/</a
       >
-      Link to GitHub repository: (TODO)
-      <a href="https://cs184.eecs.berkeley.edu/sp25">N/A</a>
+      <br />
+      Link to GitHub repository:
+      <a href="https://github.com/zx40224617/CS184FinalProposal"
+        >https://github.com/zx40224617/CS184FinalProposal</a
+      >
 
       <h2>Overview</h2>
+      This project aims to create an immersive virtual environment using VR
+      where users can interact with objects through natural hand gestures. By
+      leveraging VR technology and Unity's robust development platform, the
+      project focuses on real-time mesh deformation when a user’s hand contacts
+      virtual objects. The goal is to simulate realistic physical responses and
+      enhance the tactile feedback within the VR space
 
-      <h2>Part 1: Ray Generation and Scene Intersection</h2>
+      <h2>Problem Description</h2>
+      As VR gradually become a big part of computer graphics, and has been
+      implemented in medical, entertainment, education, and much more fileds. We
+      want to understand how the physical hand-object interaction in VR world
+      can be achieved. We are aware of the fact that there are already some
+      existing tool for this, but we are aim to understand the pipeline and
+      reimplement the idea. The chanllenge will now come to how to simulate
+      different object deformation given different hand gesture, force, and
+      object properties. We aim to look for some existing algorithm for mesh
+      deformation that we can try to implement and see how that can simulate
+      different senarios, and evaluate by how fast and realistic it is.
 
-      <h2>Part 2: Bounding Volume Hierarchy</h2>
+      <h2>Goals</h2>
+      <ul>
+        <li>
+          Develop a VR application in Unity that utilizes Meta’s SDK in Unity to
+          achieve real-time hand tracking and gesture recognition.
+        </li>
+        <li>
+          Implement collision detection between user hands and virtual objects.
+        </li>
+        <li>
+          Design a mesh deformation system that alters the object’s geometry
+          based on different properties (e.g., material stiffness, elasticity).
+        </li>
+        <li>
+          Provide a visually compelling and interactive experience that mimics
+          realistic hand-object interactions.
+        </li>
+        <li>
+          We are trying to see how well the mesh deformation can represent the
+          physcial interaction without considering volumetric rendering.
+        </li>
+      </ul>
 
-      <h2>Part 3: Direct Illumination</h2>
+      <h2>How we measure the quality and performance:</h2>
+      Since we hope to deliver a real time interactive system, we will meausre
+      the performance using the computing time and fidelity of the simulation of
+      the object deformation based on the interaction. (e.g. how real it looks
+      compare to real objects and hand interaction)
 
-      <h2>Part 4: Global Illumination</h2>
+      <h2>Deliverables</h2>
+      <ul>
+        <li>
+          What we plan to deliver:
+          <ul>
+            <li>
+              A functional VR application demonstrating real-time hand-object
+              interaction.
+            </li>
+            <li>
+              A dynamic mesh deformation system that adjusts object shapes based
+              on interaction properties.
+            </li>
+          </ul>
+        </li>
 
-      <h2>Part 5: Adaptive Sampling</h2>
+        <li>
+          What we hope to deliver:
+          <ul>
+            <li>
+              A realistic haptic feedback based on the propeties of the object
+            </li>
+            <li>
+              A custom shader that is realisic and real time for the deformation
+              of the objects
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-      <h2>(Optional) Part 6: Extra Credit Opportunities</h2>
+      <h2>Schedule</h2>
+      <ol>
+        <li>
+          Make ourselves familiar with Unity, the headset and existing tools (~
+          1 week)
+        </li>
+        <li>
+          ooking and trying different nesh deformation algorithm (~ 1 week)
+        </li>
+        <li>
+          Testing different object properties and gesture and modify current
+          system if needed (~ 1.5 week)
+        </li>
+        <li>
+          Check to see is there anything that we can add or imporve if there is
+          more time left and also finalize the report (rest of the time)
+        </li>
+      </ol>
+
+      <h2>Resources</h2>
+      <ul>
+        <li>
+          Platform:
+          <ul>
+            <li>Unity</li>
+          </ul>
+        </li>
+        <li>
+          Hardware:
+          <ul>
+            <li>Meta Quest 3</li>
+          </ul>
+        </li>
+        <li>
+          Software:
+          <ul>
+            <li>Oculus Integration SDK</li>
+            <li>Unity XR Interaction Toolkit</li>
+            <li>
+              Custom Mesh Deformation Library:
+              <ul>
+                <li>
+                  Develop or integrate existing libraries for real-time mesh
+                  modification based on collision and force feedback
+                </li>
+              </ul>
+            </li>
+            <li>
+              Custom Shader(Unity):
+              <ul>
+                <li>
+                  Creating custom shaders that support dynamic deformation
+                  effects
+                </li>
+              </ul>
+            </li>
+            <li>
+              Physics Engine:
+              <ul>
+                <li>
+                  Leverage Unity’s built-in physics for realistic collision
+                  detection and response dynamics
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
